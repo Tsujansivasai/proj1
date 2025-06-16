@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <style>
+    .register-section {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .register-section h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="register-section">
+    <h1>Register Page</h1>
+    <form action="/register" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <div class="form-group">
+        <label for="phonenumber">Phone Number</label>
+        <input type="tel" name="phonenumber" id="phonenumber" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <div class="register-section">
+        <h1>This is Register Page</h1>
+        <form action="/register" method="post">
+            <div>
+            <label for="">Username</label>
+            <input type="text" name="username">
+            </div>
+            <div>
+            <label for="">Email</label>
+            <input type="email" name="email">
+            </div>
+            <label for="">Password</label>
+            <input type="password" name="password">
+            <div>
+            <label for="">phonenumber</label>
+            <input type="phone number" name="phonenumber">
+            </div>
+            <button type="submit">Submit</button>
+            <input type="phone number" name="phonenumber">
+            
+        </form>
+    </div>
+</body>
+
+</html> -->
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-indigo-200 flex justify-center items-center min-h-screen p-4">
+    <div class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md transition-transform hover:scale-105">
+        <h1 class="text-2xl font-semibold text-blue-600 mb-6 text-center">Create an Account</h1>
+        <form action="/register" method="post" class="space-y-4">
+            <div>
+                <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required
+                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required
+                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required
+                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <button type="submit" class="bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline w-full transition-colors duration-300">
+                Register
+            </button>
+        </form>
+        <div class="mt-6 text-center">
+            <p class="text-gray-600 text-sm">Already have an account? <a href="/login" class="text-blue-500 hover:text-blue-700 font-semibold focus:outline-none focus:shadow-outline">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html> -->
